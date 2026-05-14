@@ -10,7 +10,7 @@ const AdminDashboard = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passcode, setPasscode] = useState('');
 
-  const API_URL = 'http://localhost:5000';
+  const API_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
   const handleLogin = (e) => {
     e.preventDefault();
