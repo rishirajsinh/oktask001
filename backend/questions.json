@@ -1,152 +1,152 @@
 [
   {
-    "question": "Who created Python?",
-    "options": ["Guido van Rossum", "James Gosling", "Dennis Ritchie", "Elon Musk"],
-    "answer": "Guido van Rossum"
+    "question": "What is output?\n\nprint(\"A\", \"B\")",
+    "options": ["AB", "A B", "A, B", "Error"],
+    "answer": "A B"
   },
   {
-    "question": "Python was created in which year?",
-    "options": ["1991", "2000", "1985", "2020"],
-    "answer": "1991"
-  },
-  {
-    "question": "Which function is used to print output in Python?",
-    "options": ["show()", "print()", "output()", "display()"],
+    "question": "What function is used to display output?",
+    "options": ["input()", "print()", "show()", "echo()"],
     "answer": "print()"
   },
   {
-    "question": "Which symbol is used for comments in Python?",
-    "options": ["//", "#", "/*", "--"],
-    "answer": "#"
+    "question": "What is output?\n\na = 5\nb = 2\nprint(a / b)\nprint(a // b)",
+    "options": ["2.5 and 2", "2.5 and 2.5", "2 and 2", "Error"],
+    "answer": "2.5 and 2"
   },
   {
-    "question": "Which website is used to download Python?",
-    "options": ["python.org", "google.com", "java.com", "github.com"],
-    "answer": "python.org"
-  },
-  {
-    "question": "What is the correct way to print Hello?",
-    "options": ["print('Hello')", "echo('Hello')", "show('Hello')", "printf('Hello')"],
-    "answer": "print('Hello')"
-  },
-  {
-    "question": "Which data type stores text?",
-    "options": ["int", "float", "string", "bool"],
-    "answer": "string"
-  },
-  {
-    "question": "Which data type stores whole numbers?",
-    "options": ["float", "string", "int", "bool"],
-    "answer": "int"
-  },
-  {
-    "question": "Which data type stores decimal numbers?",
-    "options": ["int", "float", "bool", "string"],
-    "answer": "float"
-  },
-  {
-    "question": "True and False belong to which type?",
-    "options": ["string", "float", "bool", "int"],
+    "question": "Which type is True?",
+    "options": ["int", "float", "str", "bool"],
     "answer": "bool"
   },
   {
-    "question": "Which function checks the type of a variable?",
-    "options": ["type()", "check()", "datatype()", "typeof()"],
-    "answer": "type()"
-  },
-  {
-    "question": "What is a variable?",
-    "options": ["A loop", "A function", "A storage box for data", "An operator"],
-    "answer": "A storage box for data"
-  },
-  {
-    "question": "Which is a correct variable name?",
-    "options": ["2name", "student_name", "class", "for"],
-    "answer": "student_name"
-  },
-  {
-    "question": "Python is case sensitive. True or False?",
-    "options": ["True", "False"],
+    "question": "What is output?\n\nprint(\"blue\" in [\"red\", \"blue\"])",
+    "options": ["True", "False", "None", "Error"],
     "answer": "True"
   },
   {
-    "question": "Which function is used to take user input?",
-    "options": ["print()", "scan()", "input()", "take()"],
-    "answer": "input()"
+    "question": "What is the data type of 10?",
+    "options": ["float", "str", "int", "bool"],
+    "answer": "int"
   },
   {
-    "question": "input() returns data as:",
-    "options": ["int", "float", "string", "bool"],
-    "answer": "string"
+    "question": "What is output?\n\nprint(10 / 2)",
+    "options": ["5", "5.0", "2.0", "Error"],
+    "answer": "5.0"
   },
   {
-    "question": "Which function converts value to integer?",
-    "options": ["str()", "float()", "int()", "bool()"],
-    "answer": "int()"
+    "question": "What is output?\n\na = 5\na += 2\nprint(a)",
+    "options": ["5", "2", "7", "Error"],
+    "answer": "7"
   },
   {
-    "question": "Which function converts value to decimal?",
-    "options": ["float()", "int()", "str()", "input()"],
-    "answer": "float()"
+    "question": "What is output?\n\na = input(\"Enter: \")\nprint(type(a))\n\n(User enters 100)",
+    "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'bool'>"],
+    "answer": "<class 'str'>"
   },
   {
-    "question": "What is the result of 10 + 5?",
-    "options": ["15", "10", "5", "20"],
-    "answer": "15"
+    "question": "Which is a string?",
+    "options": ["100", "True", "\"Hello\"", "3.14"],
+    "answer": "\"Hello\""
   },
   {
-    "question": "Which operator is used for multiplication?",
-    "options": ["+", "-", "*", "/"],
-    "answer": "*"
+    "question": "What is output?\n\nprint(10 // 3)",
+    "options": ["3", "3.33", "1", "Error"],
+    "answer": "3"
   },
   {
-    "question": "Which operator gives remainder?",
-    "options": ["/", "%", "*", "+"],
-    "answer": "%"
-  },
-  {
-    "question": "Which operator is used for power?",
-    "options": ["^", "**", "//", "%"],
-    "answer": "**"
-  },
-  {
-    "question": "Which operator checks equality?",
-    "options": ["=", "==", "!=", ">"],
-    "answer": "=="
-  },
-  {
-    "question": "What is the output of 5 > 10?",
-    "options": ["True", "False"],
+    "question": "What is output?\n\nprint(not True)",
+    "options": ["True", "False", "None", "Error"],
     "answer": "False"
   },
   {
-    "question": "Which operator means AND condition?",
-    "options": ["or", "and", "not", "in"],
-    "answer": "and"
+    "question": "Which function takes input from user?",
+    "options": ["input()", "get()", "scan()", "read()"],
+    "answer": "input()"
   },
   {
-    "question": "Which operator means OR condition?",
-    "options": ["and", "or", "not", "=="],
-    "answer": "or"
+    "question": "What is output?\n\na = True\nb = False\nprint(a and b)",
+    "options": ["True", "False", "None", "Error"],
+    "answer": "False"
   },
   {
-    "question": "Which operator reverses a condition?",
-    "options": ["and", "not", "or", "in"],
-    "answer": "not"
+    "question": "Which operator gives remainder?",
+    "options": ["/", "%", "//", "**"],
+    "answer": "%"
   },
   {
-    "question": "Which keyword checks item inside a list?",
-    "options": ["inside", "has", "in", "check"],
-    "answer": "in"
+    "question": "What is output?\n\nprint(10 % 3)",
+    "options": ["3", "3.33", "1", "0"],
+    "answer": "1"
   },
   {
-    "question": "Which editor comes free with Python?",
-    "options": ["VS Code", "IDLE", "Photoshop", "Chrome"],
-    "answer": "IDLE"
+    "question": "Which is correct variable?",
+    "options": ["2name", "class", "student_name", "my-name"],
+    "answer": "student_name"
   },
   {
-    "question": "Which language is best for beginners?",
-    "options": ["Python", "Assembly", "C", "Binary"],
-    "answer": "Python"
+    "question": "What is output?\n\nx = 2\nprint(x ** 3 ** 2)",
+    "options": ["64", "512", "32", "Error"],
+    "answer": "512"
+  },
+  {
+    "question": "Which symbol is used for comments?",
+    "options": ["//", "#", "<!-- -->", "**"],
+    "answer": "#"
+  },
+  {
+    "question": "What is output?\n\nprint(2 ** 3)",
+    "options": ["6", "8", "9", "Error"],
+    "answer": "8"
+  },
+  {
+    "question": "What is type of \"50\"?",
+    "options": ["int", "float", "str", "bool"],
+    "answer": "str"
+  },
+  {
+    "question": "What is output of:\n\nprint(5 + 3)",
+    "options": ["53", "8", "5+3", "Error"],
+    "answer": "8"
+  },
+  {
+    "question": "What is output?\n\nprint(10 != 5)",
+    "options": ["True", "False", "None", "Error"],
+    "answer": "True"
+  },
+  {
+    "question": "What is output?\n\nprint(type(3.14))",
+    "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'bool'>"],
+    "answer": "<class 'float'>"
+  },
+  {
+    "question": "What is output?\n\na = \"10\"\nb = 5\nprint(int(a) + b)",
+    "options": ["15", "105", "Error", "None"],
+    "answer": "15"
+  },
+  {
+    "question": "Which is decimal type?",
+    "options": ["int", "float", "str", "bool"],
+    "answer": "float"
+  },
+  {
+    "question": "What is output?\n\nprint(\"7\" + \"3\")",
+    "options": ["10", "73", "7 3", "Error"],
+    "answer": "73"
+  },
+  {
+    "question": "What is output?\n\nx = \"Python\"\nprint(type(x))",
+    "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'bool'>"],
+    "answer": "<class 'str'>"
+  },
+  {
+    "question": "What is output?\n\nx = 10\ny = 20\nprint(x < y)",
+    "options": ["True", "False", "None", "Error"],
+    "answer": "True"
+  },
+  {
+    "question": "What is output?\n\nprint(\"Hello\" + \"World\")",
+    "options": ["Hello World", "HelloWorld", "Hello+World", "Error"],
+    "answer": "HelloWorld"
   }
 ]
