@@ -15,12 +15,12 @@ const TestPage = () => {
   const [submitted, setSubmitted] = useState(false);
   const [proctoring, setProctoring] = useState({ camera: false, mic: false, location: false });
 
-  const [timeLeft, setTimeLeft] = useState(1200); // 20 minutes
+  const [timeLeft, setTimeLeft] = useState(null); // Will be set from backend
   const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
   // Timer Logic
   useEffect(() => {
-    if (!testStarted || submitted || timeLeft <= 0) return;
+    if (!testStarted || submitted || timeLeft === null || timeLeft <= 0) return;
 
     const timer = setInterval(() => {
       setTimeLeft(prev => {
@@ -80,6 +80,12 @@ const TestPage = () => {
         setStudentEmail(verifyRes.data.email);
         const testRes = await axios.get(`${backendUrl}/test/${token}`);
         setTestData(testRes.data);
+        // Set timer from backend response
+        if (testRes.data.timeLimit) {
+          setTimeLeft(testRes.data.timeLimit);
+        } else {
+          setTimeLeft(1200); // fallback 20 min
+        }
       } catch (error) {
         console.error('Error validating access:', error);
         navigate('/access-denied');

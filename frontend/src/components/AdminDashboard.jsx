@@ -108,13 +108,30 @@ const AdminDashboard = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <input 
-              type="text" 
-              placeholder="Test ID" 
+            <select
               value={testId}
               onChange={(e) => setTestId(e.target.value)}
               required
-            />
+              style={{
+                flex: 1,
+                background: 'rgba(0, 0, 0, 0.2)',
+                border: '1px solid var(--glass-border)',
+                padding: '0.8rem 1.2rem',
+                borderRadius: '10px',
+                color: 'white',
+                fontSize: '1rem',
+                cursor: 'pointer',
+                appearance: 'none',
+                WebkitAppearance: 'none',
+                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%239ca3af' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E")`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'right 1rem center',
+              }}
+            >
+              <option value="PYTHON_HARD" style={{ background: '#1a1d24' }}>Python - Hard</option>
+              <option value="PYTHON_EASY" style={{ background: '#1a1d24' }}>Python - Easy</option>
+              <option value="MATHS" style={{ background: '#1a1d24' }}>Mathematics</option>
+            </select>
             <button type="submit" className="btn-primary">Generate Access</button>
           </form>
           {message && <p className="status-msg">{message}</p>}

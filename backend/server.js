@@ -13,23 +13,42 @@ const app = express();
 const fs = require('fs');
 const path = require('path');
 
-// Load questions from external file
-let mockQuestions = [];
-try {
-  const questionsPath = path.join(__dirname, 'questions.json');
-  const rawData = JSON.parse(fs.readFileSync(questionsPath, 'utf8'));
-  
-  // Format data to ensure it has id and text fields
-  mockQuestions = rawData.map((q, index) => ({
-    id: q.id || (index + 1),
-    text: q.text || q.question || "Untitled Question",
-    options: q.options || [],
-    answer: q.answer || ""
-  }));
+// Test configuration: maps testId to question file and timer
+const testConfig = {
+  PYTHON_HARD: {
+    file: 'questions_python_hard.json',
+    timeLimit: 1200 // 20 minutes
+  },
+  PYTHON_EASY: {
+    file: 'questions_python_easy.json',
+    timeLimit: 1200 // 20 minutes
+  },
+  MATHS: {
+    file: 'questions_maths.json',
+    timeLimit: 1500 // 25 minutes
+  }
+};
 
-  console.log(`Loaded ${mockQuestions.length} questions.`);
-} catch (err) {
-  console.error("Failed to load questions.json", err);
+// Load all question sets
+const questionSets = {};
+
+for (const [testId, config] of Object.entries(testConfig)) {
+  try {
+    const questionsPath = path.join(__dirname, config.file);
+    const rawData = JSON.parse(fs.readFileSync(questionsPath, 'utf8'));
+
+    questionSets[testId] = rawData.map((q, index) => ({
+      id: q.id || (index + 1),
+      text: q.text || q.question || "Untitled Question",
+      options: q.options || [],
+      answer: q.answer || ""
+    }));
+
+    console.log(`Loaded ${questionSets[testId].length} questions for ${testId}.`);
+  } catch (err) {
+    console.error(`Failed to load ${config.file}`, err);
+    questionSets[testId] = [];
+  }
 }
 
 // Middleware
@@ -50,6 +69,11 @@ app.post('/admin/add-student', async (req, res) => {
     
     if (!email || !testId) {
       return res.status(400).json({ error: 'Email and testId are required' });
+    }
+
+    // Validate testId
+    if (!testConfig[testId]) {
+      return res.status(400).json({ error: 'Invalid test type. Valid options: PYTHON_HARD, PYTHON_EASY, MATHS' });
     }
 
     // Check if student already exists
@@ -147,7 +171,7 @@ app.get('/verify-token/:token', async (req, res) => {
   }
 });
 
-// 2. Test data fetch
+// 2. Test data fetch — returns questions + timeLimit based on testId
 app.get('/test/:token', async (req, res) => {
   try {
     const { token } = req.params;
@@ -157,10 +181,15 @@ app.get('/test/:token', async (req, res) => {
       return res.status(403).json({ error: 'Access denied' });
     }
 
-    // Return mock test questions
+    const testId = tokenDoc.testId;
+    const questions = questionSets[testId] || [];
+    const timeLimit = testConfig[testId] ? testConfig[testId].timeLimit : 1200;
+
+    // Return test questions + timer (NO test type name sent to student)
     res.json({
-      testId: tokenDoc.testId,
-      questions: mockQuestions
+      testId: testId,
+      questions: questions,
+      timeLimit: timeLimit
     });
 
   } catch (error) {
@@ -168,7 +197,7 @@ app.get('/test/:token', async (req, res) => {
   }
 });
 
-// 3. Submit Test
+// 3. Submit Test — scores against the correct question set
 app.post('/submit-test', async (req, res) => {
   try {
     const { token, answers } = req.body;
@@ -187,10 +216,13 @@ app.post('/submit-test', async (req, res) => {
       return res.status(400).json({ error: 'Test already submitted' });
     }
 
+    const testId = tokenDoc.testId;
+    const questions = questionSets[testId] || [];
+
     let score = 0;
-    const totalQuestions = mockQuestions.length;
+    const totalQuestions = questions.length;
     
-    mockQuestions.forEach(q => {
+    questions.forEach(q => {
       if (answers[q.id] === q.answer) {
         score++;
       }

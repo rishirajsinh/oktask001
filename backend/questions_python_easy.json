@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "question": "What is the output of:\n\nprint(type(True))?",
+    "options": ["<class 'str'>", "<class 'bool'>", "<class 'int'>", "<class 'float'>"],
+    "answer": "<class 'bool'>"
+  },
+  {
+    "id": 2,
+    "question": "What is the result of 17 % 5?",
+    "options": ["3", "2", "5", "17"],
+    "answer": "2"
+  },
+  {
+    "id": 3,
+    "question": "Which operator returns True only if both conditions are True?",
+    "options": ["or", "not", "and", "in"],
+    "answer": "and"
+  },
+  {
+    "id": 4,
+    "question": "What is the output of:\n\nprint(type(95.8))",
+    "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'bool'>"],
+    "answer": "<class 'float'>"
+  },
+  {
+    "id": 5,
+    "question": "What is the correct f-string syntax?",
+    "options": ["\"Name: {name}\"", "f\"Name: {name}\"", "f(Name: name)", "\"f{Name}\""],
+    "answer": "f\"Name: {name}\""
+  },
+  {
+    "id": 6,
+    "question": "What is the output of:\n\ntext = \"Python\"\nprint(text[-1])",
+    "options": ["P", "n", "o", "Error"],
+    "answer": "n"
+  },
+  {
+    "id": 7,
+    "question": "Which function converts a string into an integer?",
+    "options": ["str()", "float()", "bool()", "int()"],
+    "answer": "int()"
+  },
+  {
+    "id": 8,
+    "question": "What is the output of:\n\nvalue = bool(0)\nprint(value)",
+    "options": ["True", "False", "0", "Error"],
+    "answer": "False"
+  },
+  {
+    "id": 9,
+    "question": "Who created Python?",
+    "options": ["Dennis Ritchie", "James Gosling", "Guido van Rossum", "Bjarne Stroustrup"],
+    "answer": "Guido van Rossum"
+  },
+  {
+    "id": 10,
+    "question": "What is the output of:\n\nprint(5 > 3 and 10 < 2)?",
+    "options": ["True", "False", "5", "10"],
+    "answer": "False"
+  },
+  {
+    "id": 11,
+    "question": "Which operator is used for exponentiation?",
+    "options": ["^", "**", "//", "%%"],
+    "answer": "**"
+  },
+  {
+    "id": 12,
+    "question": "What is the output of:\n\nx = 5\ny = \"5\"\nprint(x == int(y))",
+    "options": ["False", "True", "\"True\"", "Error"],
+    "answer": "True"
+  },
+  {
+    "id": 13,
+    "question": "What is the output of:\n\nnum = \"15\"\nprint(int(num) * 2 + 5)",
+    "options": ["35", "25", "155", "30"],
+    "answer": "35"
+  },
+  {
+    "id": 14,
+    "question": "What is the output of:\n\nsentence = \"Learn code at CodeAnantam\"\nprint(\"Code\" in sentence)",
+    "options": ["True", "False", "code", "Error"],
+    "answer": "True"
+  },
+  {
+    "id": 15,
+    "question": "Which statement about Python variables is correct?",
+    "options": ["Variables must be declared with datatype", "Variables cannot change values", "Python is dynamically typed", "Variables cannot store strings"],
+    "answer": "Python is dynamically typed"
+  },
+  {
+    "id": 16,
+    "question": "What does input() return by default?",
+    "options": ["int", "float", "bool", "str"],
+    "answer": "str"
+  },
+  {
+    "id": 17,
+    "question": "What is the output of:\n\nx = 10\ny = 3\nprint(x % y + x // y)",
+    "options": ["4", "3", "5", "6"],
+    "answer": "4"
+  },
+  {
+    "id": 18,
+    "question": "Which operator checks whether an item exists inside a string or list?",
+    "options": ["==", "in", "and", "not"],
+    "answer": "in"
+  },
+  {
+    "id": 19,
+    "question": "What is the output of:\n\nprint(2 ** 3)?",
+    "options": ["6", "9", "8", "5"],
+    "answer": "8"
+  },
+  {
+    "id": 20,
+    "question": "What is the output of:\n\nprint(not (5 > 2 and 10 > 3))",
+    "options": ["True", "False", "5", "Error"],
+    "answer": "False"
+  },
+  {
+    "id": 21,
+    "question": "What is the output of:\n\nx = \"20\"\ny = 5\nprint(int(x) + y * 2)",
+    "options": ["50", "30", "25", "Error"],
+    "answer": "30"
+  },
+  {
+    "id": 22,
+    "question": "Which of the following is a valid variable name in Python?",
+    "options": ["1student", "student_name", "class", "student-name"],
+    "answer": "student_name"
+  },
+  {
+    "id": 23,
+    "question": "What is the output of:\n\nname = \"Aditi\"\nscore = 95\nprint(f\"{name} scored {score}%\")",
+    "options": ["Aditi scored score%", "{name} scored {score}%", "Aditi scored 95%", "Error"],
+    "answer": "Aditi scored 95%"
+  },
+  {
+    "id": 24,
+    "question": "What is the output of 9 // 2?",
+    "options": ["4", "4.5", "5", "4.0"],
+    "answer": "4"
+  },
+  {
+    "id": 25,
+    "question": "What is the output of:\n\nx = True\ny = False\nprint(x and not y)",
+    "options": ["True", "False", "0", "Error"],
+    "answer": "True"
+  },
+  {
+    "id": 26,
+    "question": "Which of the following is NOT a valid Python data type from the syllabus?",
+    "options": ["float", "character", "bool", "str"],
+    "answer": "character"
+  },
+  {
+    "id": 27,
+    "question": "What will be the value of x after execution?\n\nx = 10\nx = x + 5\nx = x * 2",
+    "options": ["20", "25", "30", "15"],
+    "answer": "30"
+  },
+  {
+    "id": 28,
+    "question": "Which operator checks equality?",
+    "options": ["=", "!=", "==", ">="],
+    "answer": "=="
+  },
+  {
+    "id": 29,
+    "question": "What is the output of:\n\nscore = \"95\"\nprint(type(int(score)))",
+    "options": ["<class 'str'>", "<class 'float'>", "<class 'int'>", "<class 'bool'>"],
+    "answer": "<class 'int'>"
+  },
+  {
+    "id": 30,
+    "question": "What is the output of:\n\nprint('Python' in ['Java', 'Python', 'C++'])?",
+    "options": ["False", "True", "python", "Error"],
+    "answer": "True"
+  }
+]
