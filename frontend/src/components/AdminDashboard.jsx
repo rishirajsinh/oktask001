@@ -3,14 +3,14 @@ import axios from 'axios';
 
 const AdminDashboard = () => {
   const [email, setEmail] = useState('');
-  const [testId, setTestId] = useState('PYTHON_TEST_2024');
+  const [testId, setTestId] = useState('PYTHON_HARD');
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passcode, setPasscode] = useState('');
 
-  const API_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+  const API_URL = import.meta.env.VITE_BACKEND_URL || 'https://oktask001.onrender.com';
 
   const handleLogin = (e) => {
     e.preventDefault();

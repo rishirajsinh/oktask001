@@ -1,182 +1,332 @@
 [
   {
     "id": 1,
-    "question": "Which trigonometric identity is correct?",
-    "options": ["sin²θ + cos²θ = 1", "sinθ + cosθ = 1", "tan²θ = 1 + tanθ", "sec²θ = tanθ"],
-    "answer": "sin²θ + cos²θ = 1"
+    "question": "Equation of line passing through (1,2) with slope 3 is:",
+    "options": [
+      "y=3x-1",
+      "y=3x+1",
+      "y=x+3",
+      "3y=x+1"
+    ],
+    "answer": "y=3x-1"
   },
   {
     "id": 2,
-    "question": "If A is a 3×3 matrix such that |A| = 5, then the value of |adj(adj(A))| is:",
-    "options": ["625", "3125", "15625", "25"],
-    "answer": "3125"
+    "question": "Which of the following matrices is always symmetric?",
+    "options": [
+      "Identity Matrix",
+      "Row Matrix",
+      "Column Matrix",
+      "Null Matrix only"
+    ],
+    "answer": "Identity Matrix"
   },
   {
     "id": 3,
-    "question": "The median of 3, 5, 7, 9, 11 is:",
-    "options": ["5", "6", "7", "8"],
+    "question": "If variance is 49, standard deviation equals:",
+    "options": [
+      "14",
+      "7",
+      "49",
+      "21"
+    ],
     "answer": "7"
   },
   {
     "id": 4,
-    "question": "If vectors a and b are perpendicular, then their dot product is:",
-    "options": ["1", "-1", "0", "Undefined"],
+    "question": "If A is skew-symmetric, then diagonal elements are:",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "Undefined"
+    ],
     "answer": "0"
   },
   {
     "id": 5,
-    "question": "The determinant of matrix [[2, 0], [0, 5]] is:",
-    "options": ["10", "7", "0", "5"],
-    "answer": "10"
-  },
-  {
-    "id": 6,
-    "question": "If P(A) = 0.7, then P(A') equals:",
-    "options": ["0.7", "0.3", "1", "0"],
-    "answer": "0.3"
-  },
-  {
-    "id": 7,
-    "question": "If sin θ = 3/5 and θ is acute, then cos θ equals:",
-    "options": ["4/5", "3/4", "5/4", "2/5"],
-    "answer": "4/5"
-  },
-  {
-    "id": 8,
-    "question": "If A and B are invertible matrices, then (AB)⁻¹ equals:",
-    "options": ["A⁻¹B⁻¹", "B⁻¹A⁻¹", "AB", "BA"],
-    "answer": "B⁻¹A⁻¹"
-  },
-  {
-    "id": 9,
-    "question": "The mean of 2, 4, 6, 8, 10 is:",
-    "options": ["5", "6", "7", "8"],
-    "answer": "6"
-  },
-  {
-    "id": 10,
-    "question": "If A is a skew-symmetric matrix, then Aᵀ equals:",
-    "options": ["A", "-A", "I", "0"],
-    "answer": "-A"
-  },
-  {
-    "id": 11,
-    "question": "The angle of elevation of the top of a tower from a point 20 m away is 45°. The height of the tower is:",
-    "options": ["10 m", "20 m", "30 m", "40 m"],
-    "answer": "20 m"
-  },
-  {
-    "id": 12,
-    "question": "Which of the following is a square matrix?",
-    "options": ["2×3", "3×2", "3×3", "1×4"],
-    "answer": "3×3"
-  },
-  {
-    "id": 13,
-    "question": "If the variance of a data set is 25, then the standard deviation is:",
-    "options": ["5", "10", "15", "25"],
-    "answer": "5"
-  },
-  {
-    "id": 14,
-    "question": "The cofactor of element 2 in matrix [[1,2],[3,4]] is:",
-    "options": ["-3", "3", "-4", "4"],
-    "answer": "-3"
-  },
-  {
-    "id": 15,
-    "question": "If tan θ = 1, then θ can be:",
-    "options": ["0°", "30°", "45°", "60°"],
-    "answer": "45°"
-  },
-  {
-    "id": 16,
-    "question": "The direction ratios of a line parallel to vector 2i - 3j + 6k are:",
-    "options": ["(2, -3, 6)", "(1, 1, 1)", "(3, 2, 6)", "(6, -3, 2)"],
-    "answer": "(2, -3, 6)"
-  },
-  {
-    "id": 17,
-    "question": "If A = [[1,2],[3,4]] and B = [[2,0],[1,2]], then AB equals:",
-    "options": ["[[4,4],[10,8]]", "[[2,2],[4,8]]", "[[1,4],[3,8]]", "[[5,2],[11,8]]"],
-    "answer": "[[4,4],[10,8]]"
-  },
-  {
-    "id": 18,
-    "question": "The probability of getting a head when a fair coin is tossed is:",
-    "options": ["0", "1", "1/2", "2"],
-    "answer": "1/2"
-  },
-  {
-    "id": 19,
-    "question": "If A is a non-singular matrix satisfying A² - 5A + 6I = 0, then A⁻¹ equals:",
-    "options": ["(5I - A)/6", "(A - 5I)/6", "(6I - A)/5", "A/6"],
-    "answer": "(5I - A)/6"
-  },
-  {
-    "id": 20,
-    "question": "Find the transpose of matrix [[1, 2], [3, 4]].",
-    "options": ["[[1, 3], [2, 4]]", "[[4, 3], [2, 1]]", "[[1, 2], [3, 4]]", "[[2, 1], [4, 3]]"],
-    "answer": "[[1, 3], [2, 4]]"
-  },
-  {
-    "id": 21,
-    "question": "If vectors a = i + 2j and b = 2i - j, then a · b equals:",
-    "options": ["0", "1", "2", "-1"],
-    "answer": "0"
-  },
-  {
-    "id": 22,
-    "question": "The standard deviation can never be:",
-    "options": ["Positive", "Zero", "Negative", "Fraction"],
-    "answer": "Negative"
-  },
-  {
-    "id": 23,
-    "question": "If P(A) = 0.6 and P(B) = 0.5 with P(A ∩ B) = 0.3, then P(A | B) equals:",
-    "options": ["0.6", "0.5", "0.3", "0.8"],
-    "answer": "0.6"
-  },
-  {
-    "id": 24,
-    "question": "What is the distance between points (1,2,3) and (4,6,3) in 3D geometry?",
-    "options": ["5", "4", "3", "6"],
-    "answer": "5"
-  },
-  {
-    "id": 25,
-    "question": "If sin θ + cos θ = √2 cos θ, then θ equals:",
-    "options": ["30°", "45°", "60°", "90°"],
-    "answer": "45°"
-  },
-  {
-    "id": 26,
-    "question": "Which matrix has all diagonal elements equal to 1 and others 0?",
-    "options": ["Null Matrix", "Identity Matrix", "Diagonal Matrix", "Row Matrix"],
-    "answer": "Identity Matrix"
-  },
-  {
-    "id": 27,
-    "question": "If sec θ = 13/5, then tan θ equals:",
-    "options": ["12/5", "5/12", "13/12", "12/13"],
-    "answer": "12/5"
-  },
-  {
-    "id": 28,
-    "question": "The mode of 2, 3, 3, 5, 7, 3, 8 is:",
-    "options": ["2", "3", "5", "7"],
+    "question": "If secθ - tanθ = 1/3, then secθ + tanθ equals:",
+    "options": [
+      "3",
+      "1/3",
+      "9",
+      "1"
+    ],
     "answer": "3"
   },
   {
-    "id": 29,
-    "question": "Find the determinant of [[1,2,3],[0,1,4],[5,6,0]].",
-    "options": ["1", "-1", "5", "10"],
+    "id": 6,
+    "question": "If P(A)=0.4, then P(A') equals:",
+    "options": [
+      "0.6",
+      "0.4",
+      "1",
+      "0"
+    ],
+    "answer": "0.6"
+  },
+  {
+    "id": 7,
+    "question": "The value of sin⁴θ - cos⁴θ equals:",
+    "options": [
+      "sin2θ",
+      "cos2θ",
+      "-cos2θ",
+      "sin²θ+cos²θ"
+    ],
+    "answer": "-cos2θ"
+  },
+  {
+    "id": 8,
+    "question": "Determinant of identity matrix of order 3 is:",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "-1"
+    ],
     "answer": "1"
   },
   {
+    "id": 9,
+    "question": "If a = 2i+3j-k, then magnitude of a is:",
+    "options": [
+      "√14",
+      "√12",
+      "14",
+      "6"
+    ],
+    "answer": "√14"
+  },
+  {
+    "id": 10,
+    "question": "If sinθ = 5/13 and θ is acute, then tanθ equals:",
+    "options": [
+      "5/12",
+      "12/5",
+      "13/5",
+      "5/13"
+    ],
+    "answer": "5/12"
+  },
+  {
+    "id": 11,
+    "question": "If P(A)=0.5, P(B)=0.4, P(A∩B)=0.2, then P(A∪B) equals:",
+    "options": [
+      "0.9",
+      "0.7",
+      "0.3",
+      "0.2"
+    ],
+    "answer": "0.7"
+  },
+  {
+    "id": 12,
+    "question": "If A=[[2,1],[5,3]], then |A⁻¹| equals:",
+    "options": [
+      "1",
+      "1/1",
+      "1/(6-5)",
+      "6-5"
+    ],
+    "answer": "1/(6-5)"
+  },
+  {
+    "id": 13,
+    "question": "The mean of first five even natural numbers is:",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "answer": "6"
+  },
+  {
+    "id": 14,
+    "question": "The probability of getting an even number on a fair die is:",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "answer": "1/2"
+  },
+  {
+    "id": 15,
+    "question": "If matrix A is orthogonal, then:",
+    "options": [
+      "Aᵀ=A",
+      "A⁻¹=Aᵀ",
+      "|A|=0",
+      "A=I"
+    ],
+    "answer": "A⁻¹=Aᵀ"
+  },
+  {
+    "id": 16,
+    "question": "If vectors a = 2i + 3j and b = i - j, then a·b equals:",
+    "options": [
+      "-1",
+      "1",
+      "5",
+      "-5"
+    ],
+    "answer": "-1"
+  },
+  {
+    "id": 17,
+    "question": "If A=[[1,2],[3,4]], then A⁻¹ equals:",
+    "options": [
+      "(1/-2)[[4,-2],[-3,1]]",
+      "(1/2)[[4,-2],[-3,1]]",
+      "[[4,-2],[-3,1]]",
+      "None"
+    ],
+    "answer": "(1/-2)[[4,-2],[-3,1]]"
+  },
+  {
+    "id": 18,
+    "question": "If a=i+j+k and b=2i-j+3k, then angle between them is:",
+    "options": [
+      "90°",
+      "60°",
+      "45°",
+      "30°"
+    ],
+    "answer": "45°"
+  },
+  {
+    "id": 19,
+    "question": "The value of determinant [[2,3,1],[1,0,2],[4,1,5]] is:",
+    "options": [
+      "3",
+      "5",
+      "-9",
+      "9"
+    ],
+    "answer": "9"
+  },
+  {
+    "id": 20,
+    "question": "Distance between points (1,2,3) and (4,6,6) is:",
+    "options": [
+      "5",
+      "3√2",
+      "√34",
+      "√50"
+    ],
+    "answer": "√34"
+  },
+  {
+    "id": 21,
+    "question": "If sinθ = cosθ for acute θ, then θ equals:",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "answer": "45°"
+  },
+  {
+    "id": 22,
+    "question": "The determinant of [[1,2],[3,4]] is:",
+    "options": [
+      "-2",
+      "2",
+      "10",
+      "-10"
+    ],
+    "answer": "-2"
+  },
+  {
+    "id": 23,
+    "question": "If tanθ = √3, then θ may be:",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "answer": "60°"
+  },
+  {
+    "id": 24,
+    "question": "If tanA + tanB = 1 - tanA tanB, then A+B equals:",
+    "options": [
+      "45°",
+      "90°",
+      "135°",
+      "180°"
+    ],
+    "answer": "45°"
+  },
+  {
+    "id": 25,
+    "question": "If A and B are invertible matrices, then:",
+    "options": [
+      "(AB)⁻¹=A⁻¹B⁻¹",
+      "(AB)⁻¹=B⁻¹A⁻¹",
+      "(AB)⁻¹=AB",
+      "(AB)⁻¹=BA"
+    ],
+    "answer": "(AB)⁻¹=B⁻¹A⁻¹"
+  },
+  {
+    "id": 26,
+    "question": "If |x 1; 2 3| = 10, then x equals:",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "answer": "6"
+  },
+  {
+    "id": 27,
+    "question": "If vectors are perpendicular, then:",
+    "options": [
+      "Dot product is 1",
+      "Cross product is 0",
+      "Dot product is 0",
+      "Both are 0"
+    ],
+    "answer": "Dot product is 0"
+  },
+  {
+    "id": 28,
+    "question": "A coin is tossed twice. Probability of getting exactly one head is:",
+    "options": [
+      "1/4",
+      "1/2",
+      "3/4",
+      "1"
+    ],
+    "answer": "1/2"
+  },
+  {
+    "id": 29,
+    "question": "The transpose of [[1,2,3],[4,5,6]] is:",
+    "options": [
+      "[[1,4],[2,5],[3,6]]",
+      "[[1,2],[3,4],[5,6]]",
+      "[[1,4,2],[5,3,6]]",
+      "Same matrix"
+    ],
+    "answer": "[[1,4],[2,5],[3,6]]"
+  },
+  {
     "id": 30,
-    "question": "If A is a 3×3 matrix and |A| = 4, then |3A| equals:",
-    "options": ["12", "36", "108", "27"],
-    "answer": "108"
+    "question": "If sinθ + cosθ = √2, then θ equals:",
+    "options": [
+      "0°",
+      "45°",
+      "90°",
+      "135°"
+    ],
+    "answer": "45°"
   }
 ]

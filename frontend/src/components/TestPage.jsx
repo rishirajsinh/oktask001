@@ -16,7 +16,7 @@ const TestPage = () => {
   const [proctoring, setProctoring] = useState({ camera: false, mic: false, location: false });
 
   const [timeLeft, setTimeLeft] = useState(null); // Will be set from backend
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://oktask001.onrender.com';
 
   // Timer Logic
   useEffect(() => {
