@@ -1,332 +1,332 @@
 [
   {
     "id": 1,
-    "question": "Equation of line passing through (1,2) with slope 3 is:",
+    "question": "In C++, what is the exact outcome of evaluating the expression `x = 5; int y = ++x + x++ + ++x;` under the C++17 standard compliance rules?",
     "options": [
-      "y=3x-1",
-      "y=3x+1",
-      "y=x+3",
-      "3y=x+1"
+      "19",
+      "20",
+      "21",
+      "The behavior is unsequenced and technically undefined/implementation-dependent"
     ],
-    "answer": "y=3x-1"
+    "answer": "The behavior is unsequenced and technically undefined/implementation-dependent"
   },
   {
     "id": 2,
-    "question": "Which of the following matrices is always symmetric?",
+    "question": "In Python, which of the following expressions evaluates to a distinct boolean value compared to the other three?",
     "options": [
-      "Identity Matrix",
-      "Row Matrix",
-      "Column Matrix",
-      "Null Matrix only"
+      "bool([[]][0])",
+      "all([[], {}])",
+      "any([[], 0, ''])",
+      "bool(all([]))"
     ],
-    "answer": "Identity Matrix"
+    "answer": "bool(all([]))"
   },
   {
     "id": 3,
-    "question": "If variance is 49, standard deviation equals:",
+    "question": "Consider a 32-bit two's complement signed integer systems. If `a = 0x7FFFFFFF` and `b = 0x80000000`, what is the exact bitwise evaluation of `(a + 1) ^ b`?",
     "options": [
-      "14",
-      "7",
-      "49",
-      "21"
+      "0x00000000",
+      "0xFFFFFFFF",
+      "0x7FFFFFFF",
+      "0x80000000"
     ],
-    "answer": "7"
+    "answer": "0x00000000"
   },
   {
     "id": 4,
-    "question": "If A is skew-symmetric, then diagonal elements are:",
+    "question": "In JavaScript, what is the exact string output of the expression `[] + {} + [[]] + ![]`?",
     "options": [
-      "1",
-      "-1",
+      "\"[object Object]false\"",
+      "\"undefined[object Object]false\"",
+      "\"[object Object][object Object]\"",
+      "\"NaNfalse\""
+    ],
+    "answer": "\"[object Object]false\""
+  },
+  {
+    "id": 5,
+    "question": "In Python, what is the value of `x` after executing: `x = \"Python\"; x = x.join([x[0], x[-1]])`?",
+    "options": [
+      "\"PPythonn\"",
+      "\"nPythonP\"",
+      "\"Python\"",
+      "\"P\""
+    ],
+    "answer": "\"PPythonn\""
+  },
+  {
+    "id": 6,
+    "question": "What is the behavior of the following C code snippet?\n`int x = 1;` \n`if (x-- && --x) { printf(\"A\"); }` \n`else if (++x || x++) { printf(\"B\"); }` \n`printf(\"%d\", x);`",
+    "options": [
+      "A-1",
+      "B0",
+      "B1",
+      "B-1"
+    ],
+    "answer": "B0"
+  },
+  {
+    "id": 7,
+    "question": "In Java, what is the result of evaluating the expression `true ? 1.0 : (true ? 2 : 3)` when wrapped inside an dynamic object assignment?",
+    "options": [
+      "It returns an Integer object with value 1",
+      "It returns a Double object with value 1.0 due to ternary numeric promotion rules",
+      "It causes a compilation error due to type mismatch",
+      "It returns a Double object with value 2.0"
+    ],
+    "answer": "It returns a Double object with value 1.0 due to ternary numeric promotion rules"
+  },
+  {
+    "id": 8,
+    "question": "In C, if `int a = 2, b = 1, c = 0;`, what is the final value of `c` after executing `c = a --> b == c;`?",
+    "options": [
       "0",
-      "Undefined"
+      "1",
+      "2",
+      "-1"
     ],
     "answer": "0"
   },
   {
-    "id": 5,
-    "question": "If secθ - tanθ = 1/3, then secθ + tanθ equals:",
+    "id": 9,
+    "question": "In Python, what is the value of `bool(-0.0 or 0j or \"\" or [0])`?",
     "options": [
-      "3",
-      "1/3",
-      "9",
-      "1"
+      "True",
+      "False",
+      "0",
+      "TypeError"
     ],
-    "answer": "3"
+    "answer": "True"
   },
   {
-    "id": 6,
-    "question": "If P(A)=0.4, then P(A') equals:",
+    "id": 10,
+    "question": "In JavaScript, what does `typeof (parseInt && parseFloat)(\"123\")` evaluate to?",
     "options": [
-      "0.6",
-      "0.4",
-      "1",
-      "0"
+      "\"number\"",
+      "\"function\"",
+      "\"string\"",
+      "\"undefined\""
     ],
-    "answer": "0.6"
+    "answer": "\"number\""
   },
   {
-    "id": 7,
-    "question": "The value of sin⁴θ - cos⁴θ equals:",
+    "id": 11,
+    "question": "What is the value of `x` in Python after evaluating: `x = \"abcde\"[::-1][1:4:-1]`?",
     "options": [
-      "sin2θ",
-      "cos2θ",
-      "-cos2θ",
-      "sin²θ+cos²θ"
+      "\"bcd\"",
+      "\"dcb\"",
+      "\"\"",
+      "\"cb\""
     ],
-    "answer": "-cos2θ"
+    "answer": "\"\""
   },
   {
-    "id": 8,
-    "question": "Determinant of identity matrix of order 3 is:",
+    "id": 12,
+    "question": "In C++, what does the expression `sizeof(char) == sizeof('a')` evaluate to on typical architectures?",
+    "options": [
+      "Always true",
+      "Always false because character literals in C++ are of type `int`",
+      "Always true because character literals in C++ are of type `char`",
+      "Implementation-defined based on the signedness of the compiler"
+    ],
+    "answer": "Always true because character literals in C++ are of type `char`"
+  },
+  {
+    "id": 13,
+    "question": "In C, what is the final state of `x` after: `unsigned int x = 0; x = ~x >> 31;`?",
     "options": [
       "0",
       "1",
-      "3",
-      "-1"
+      "2147483647",
+      "4294967295"
     ],
     "answer": "1"
   },
   {
-    "id": 9,
-    "question": "If a = 2i+3j-k, then magnitude of a is:",
-    "options": [
-      "√14",
-      "√12",
-      "14",
-      "6"
-    ],
-    "answer": "√14"
-  },
-  {
-    "id": 10,
-    "question": "If sinθ = 5/13 and θ is acute, then tanθ equals:",
-    "options": [
-      "5/12",
-      "12/5",
-      "13/5",
-      "5/13"
-    ],
-    "answer": "5/12"
-  },
-  {
-    "id": 11,
-    "question": "If P(A)=0.5, P(B)=0.4, P(A∩B)=0.2, then P(A∪B) equals:",
-    "options": [
-      "0.9",
-      "0.7",
-      "0.3",
-      "0.2"
-    ],
-    "answer": "0.7"
-  },
-  {
-    "id": 12,
-    "question": "If A=[[2,1],[5,3]], then |A⁻¹| equals:",
-    "options": [
-      "1",
-      "1/1",
-      "1/(6-5)",
-      "6-5"
-    ],
-    "answer": "1/(6-5)"
-  },
-  {
-    "id": 13,
-    "question": "The mean of first five even natural numbers is:",
-    "options": [
-      "4",
-      "5",
-      "6",
-      "8"
-    ],
-    "answer": "6"
-  },
-  {
     "id": 14,
-    "question": "The probability of getting an even number on a fair die is:",
+    "question": "In Python, what is the output of `print(\"a\" < \"ab\" < \"abc\" == True)`?",
     "options": [
-      "1/6",
-      "1/3",
-      "1/2",
-      "2/3"
+      "True",
+      "False",
+      "TypeError",
+      "None"
     ],
-    "answer": "1/2"
+    "answer": "False"
   },
   {
     "id": 15,
-    "question": "If matrix A is orthogonal, then:",
+    "question": "In JavaScript, what is the value of `(!![] + !![] + !![])` evaluated as an array index lookup like `[10, 20, 30, 40][!![] + !![] + !![]]`?",
     "options": [
-      "Aᵀ=A",
-      "A⁻¹=Aᵀ",
-      "|A|=0",
-      "A=I"
+      "10",
+      "20",
+      "30",
+      "40"
     ],
-    "answer": "A⁻¹=Aᵀ"
+    "answer": "40"
   },
   {
     "id": 16,
-    "question": "If vectors a = 2i + 3j and b = i - j, then a·b equals:",
+    "question": "What is the exact result of the evaluation of the expression `1 << 32` in standard C on a platform where `int` is 32 bits wide?",
     "options": [
-      "-1",
+      "0",
       "1",
-      "5",
-      "-5"
+      "4294967296",
+      "Undefined Behavior"
     ],
-    "answer": "-1"
+    "answer": "Undefined Behavior"
   },
   {
     "id": 17,
-    "question": "If A=[[1,2],[3,4]], then A⁻¹ equals:",
+    "question": "In Python, given `s = \"engineering\"`, what is the output of `s.count(\"e\", 1, 5)`?",
     "options": [
-      "(1/-2)[[4,-2],[-3,1]]",
-      "(1/2)[[4,-2],[-3,1]]",
-      "[[4,-2],[-3,1]]",
-      "None"
+      "1",
+      "2",
+      "0",
+      "3"
     ],
-    "answer": "(1/-2)[[4,-2],[-3,1]]"
+    "answer": "1"
   },
   {
     "id": 18,
-    "question": "If a=i+j+k and b=2i-j+3k, then angle between them is:",
+    "question": "In Python, which conditional statement will execute its block given `x = [[]]`?",
     "options": [
-      "90°",
-      "60°",
-      "45°",
-      "30°"
+      "if not x:",
+      "if x == False:",
+      "if x:",
+      "if len(x) == 0:"
     ],
-    "answer": "45°"
+    "answer": "if x:"
   },
   {
     "id": 19,
-    "question": "The value of determinant [[2,3,1],[1,0,2],[4,1,5]] is:",
+    "question": "In C, what does the expression `5 == 5` evaluate to if there's a macro `#define x(y) #y` applied dynamically?",
     "options": [
-      "3",
-      "5",
-      "-9",
-      "9"
+      "0",
+      "1",
+      "Compilation Error",
+      "None of the above"
     ],
-    "answer": "9"
+    "answer": "1"
   },
   {
     "id": 20,
-    "question": "Distance between points (1,2,3) and (4,6,6) is:",
+    "question": "In Python, what is the identity relationship status of `a = 256` and `b = 256` compared to `c = 257` and `d = 257` in a standard interactive shell?",
     "options": [
-      "5",
-      "3√2",
-      "√34",
-      "√50"
+      "`a is b` is True, `c is d` is False",
+      "`a is b` is True, `c is d` is True",
+      "`a is b` is False, `c is d` is False",
+      "`a is b` is False, `c is d` is True"
     ],
-    "answer": "√34"
+    "answer": "`a is b` is True, `c is d` is False"
   },
   {
     "id": 21,
-    "question": "If sinθ = cosθ for acute θ, then θ equals:",
+    "question": "In JavaScript, what is the output of `1 < 2 < 3` and `3 > 2 > 1` respectively?",
     "options": [
-      "30°",
-      "45°",
-      "60°",
-      "90°"
+      "true, true",
+      "true, false",
+      "false, true",
+      "false, false"
     ],
-    "answer": "45°"
+    "answer": "true, false"
   },
   {
     "id": 22,
-    "question": "The determinant of [[1,2],[3,4]] is:",
+    "question": "In C++, what is the size of an empty string object (`std::string s = \"\";`) on a standard 64-bit GCC implementation due to internal pointer structures?",
     "options": [
-      "-2",
-      "2",
-      "10",
-      "-10"
+      "0 bytes",
+      "1 byte",
+      "8 bytes",
+      "32 bytes (or implementation specific non-zero structure size)"
     ],
-    "answer": "-2"
+    "answer": "32 bytes (or implementation specific non-zero structure size)"
   },
   {
     "id": 23,
-    "question": "If tanθ = √3, then θ may be:",
+    "question": "In Python, what is the runtime result of running: `not \"\" or \"Default\" and 0 or 5`?",
     "options": [
-      "30°",
-      "45°",
-      "60°",
-      "90°"
+      "True",
+      "\"Default\"",
+      "0",
+      "5"
     ],
-    "answer": "60°"
+    "answer": "5"
   },
   {
     "id": 24,
-    "question": "If tanA + tanB = 1 - tanA tanB, then A+B equals:",
+    "question": "What is the value of `res` after this evaluation in JavaScript? `let res = 0.1 + 0.2 === 0.3;`",
     "options": [
-      "45°",
-      "90°",
-      "135°",
-      "180°"
+      "true",
+      "false",
+      "undefined",
+      "TypeError"
     ],
-    "answer": "45°"
+    "answer": "false"
   },
   {
     "id": 25,
-    "question": "If A and B are invertible matrices, then:",
+    "question": "In C++, what does `int x = -1; unsigned int y = 1;` evaluate to for the expression `x < y`?",
     "options": [
-      "(AB)⁻¹=A⁻¹B⁻¹",
-      "(AB)⁻¹=B⁻¹A⁻¹",
-      "(AB)⁻¹=AB",
-      "(AB)⁻¹=BA"
+      "true",
+      "false",
+      "Implementation-defined",
+      "Compilation Error"
     ],
-    "answer": "(AB)⁻¹=B⁻¹A⁻¹"
+    "answer": "false"
   },
   {
     "id": 26,
-    "question": "If |x 1; 2 3| = 10, then x equals:",
+    "question": "What is the final value of `x` in Python after executing: `x = 10; x ^= 4; x ^= 4;`?",
     "options": [
+      "14",
+      "10",
       "4",
-      "5",
-      "6",
-      "8"
+      "0"
     ],
-    "answer": "6"
+    "answer": "10"
   },
   {
     "id": 27,
-    "question": "If vectors are perpendicular, then:",
+    "question": "In a regular expression syntax scenario, what string matches the pattern `r\"^$\\n\"` directly across standard multiline modes?",
     "options": [
-      "Dot product is 1",
-      "Cross product is 0",
-      "Dot product is 0",
-      "Both are 0"
+      "An completely empty string",
+      "A string containing exactly one newline character",
+      "A string containing two newlines",
+      "No possible string can match this"
     ],
-    "answer": "Dot product is 0"
+    "answer": "A string containing exactly one newline character"
   },
   {
     "id": 28,
-    "question": "A coin is tossed twice. Probability of getting exactly one head is:",
+    "question": "In JavaScript, what does `Array(3).join(\"a\")` produce?",
     "options": [
-      "1/4",
-      "1/2",
-      "3/4",
-      "1"
+      "\"aaa\"",
+      "\"aa\"",
+      "\"a,a,a\"",
+      "\"\""
     ],
-    "answer": "1/2"
+    "answer": "\"aa\""
   },
   {
     "id": 29,
-    "question": "The transpose of [[1,2,3],[4,5,6]] is:",
+    "question": "What happens when you compile and execute this line in C: `int x = sizeof(printf(\"Hello World\"));`?",
     "options": [
-      "[[1,4],[2,5],[3,6]]",
-      "[[1,2],[3,4],[5,6]]",
-      "[[1,4,2],[5,3,6]]",
-      "Same matrix"
+      "\"Hello World\" is printed to the console, `x` gets value 11",
+      "Nothing is printed, `x` gets the size of an integer type",
+      "Nothing is printed, `x` gets value 0",
+      "Compilation error because `printf` returns void"
     ],
-    "answer": "[[1,4],[2,5],[3,6]]"
+    "answer": "Nothing is printed, `x` gets the size of an integer type"
   },
   {
     "id": 30,
-    "question": "If sinθ + cosθ = √2, then θ equals:",
+    "question": "In Python, what is the output of the expression `\"abc\" * False`?",
     "options": [
-      "0°",
-      "45°",
-      "90°",
-      "135°"
+      "\"\"",
+      "\"abc\"",
+      "TypeError",
+      "0"
     ],
-    "answer": "45°"
+    "answer": "\"\""
   }
 ]

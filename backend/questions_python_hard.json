@@ -1,182 +1,332 @@
 [
   {
     "id": 1,
-    "question": "What is output?\n\nprint(10 // 3)",
-    "options": ["3", "3.33", "1", "Error"],
-    "answer": "3"
+    "question": "What is the output of the following code snippet?\n\nimport sys\n\nx = \"\"\ny = \"\"\nprint(x is y, sys.getsizeof(x) == sys.getsizeof(\"a\"))",
+    "options": [
+      "True True",
+      "True False",
+      "False True",
+      "False False"
+    ],
+    "answer": "True False"
   },
   {
     "id": 2,
-    "question": "What is output?\n\na = True\nb = False\nprint(a and b)",
-    "options": ["True", "False", "None", "Error"],
-    "answer": "False"
+    "question": "Given the expression `x = 257; y = 257`, under which condition will `x is y` evaluate to True in standard CPython 3.x?",
+    "options": [
+      "It always evaluates to True because 257 is within the global integer cache range.",
+      "It evaluates to True only when executed simultaneously within the same code block (e.g., a file or a single line execution cell).",
+      "It never evaluates to True because numbers above 256 are always allocated new memory locations.",
+      "It evaluates to True only if `sys.setintmaxstrdigits()` is explicitly increased."
+    ],
+    "answer": "It evaluates to True only when executed simultaneously within the same code block (e.g., a file or a single line execution cell)."
   },
   {
     "id": 3,
-    "question": "What is output?\n\nprint(\"Hello\" + \"World\")",
-    "options": ["Hello World", "HelloWorld", "Hello+World", "Error"],
-    "answer": "HelloWorld"
-  },
-  {
-    "id": 4,
-    "question": "What is output?\n\nprint(type(3.14))",
-    "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'bool'>"],
-    "answer": "<class 'float'>"
-  },
-  {
-    "id": 5,
-    "question": "Which operator gives remainder?",
-    "options": ["/", "%", "//", "**"],
-    "answer": "%"
-  },
-  {
-    "id": 6,
-    "question": "What is output?\n\nprint(10 % 3)",
-    "options": ["3", "3.33", "1", "0"],
-    "answer": "1"
-  },
-  {
-    "id": 7,
-    "question": "What function is used to display output?",
-    "options": ["input()", "print()", "show()", "echo()"],
-    "answer": "print()"
-  },
-  {
-    "id": 8,
-    "question": "What is output?\n\nx = 2\nprint(x ** 3 ** 2)",
-    "options": ["64", "512", "32", "Error"],
-    "answer": "512"
-  },
-  {
-    "id": 9,
-    "question": "What is the data type of 10?",
-    "options": ["float", "str", "int", "bool"],
-    "answer": "int"
-  },
-  {
-    "id": 10,
-    "question": "What is output?\n\nprint(\"blue\" in [\"red\", \"blue\"])",
-    "options": ["True", "False", "None", "Error"],
-    "answer": "True"
-  },
-  {
-    "id": 11,
-    "question": "What is output?\n\na = \"10\"\nb = 5\nprint(int(a) + b)",
-    "options": ["15", "105", "Error", "None"],
-    "answer": "15"
-  },
-  {
-    "id": 12,
-    "question": "What is output?\n\nprint(10 != 5)",
-    "options": ["True", "False", "None", "Error"],
-    "answer": "True"
-  },
-  {
-    "id": 13,
-    "question": "Which is correct variable?",
-    "options": ["2name", "class", "student_name", "my-name"],
-    "answer": "student_name"
-  },
-  {
-    "id": 14,
-    "question": "What is type of \"50\"?",
-    "options": ["int", "float", "str", "bool"],
-    "answer": "str"
-  },
-  {
-    "id": 15,
-    "question": "What is output?\n\nprint(\"7\" + \"3\")",
-    "options": ["10", "73", "7 3", "Error"],
-    "answer": "73"
-  },
-  {
-    "id": 16,
-    "question": "Which symbol is used for comments?",
-    "options": ["//", "#", "<!-- -->", "**"],
-    "answer": "#"
-  },
-  {
-    "id": 17,
-    "question": "What is output?\n\nprint(not True)",
-    "options": ["True", "False", "None", "Error"],
+    "question": "What happens when evaluating the following expression containing chained comparisons?\n\nprint(1 < 2 in [1, 2] == True)",
+    "options": [
+      "True",
+      "False",
+      "TypeError",
+      "SyntaxError"
+    ],
     "answer": "False"
   },
   {
+    "id": 4,
+    "question": "What is the output of the following code?\n\nx = (1, 2, [3, 4])\ntry:\n    x[2] += [5]\nexcept TypeError:\n    print(\"Error\", end=\" \")\nprint(x[2])",
+    "options": [
+      "Error [3, 4]",
+      "Error [3, 4, 5]",
+      "[3, 4, 5]",
+      "Error"
+    ],
+    "answer": "Error [3, 4, 5]"
+  },
+  {
+    "id": 5,
+    "question": "What will the following code output regarding object references?\n\na = [[]] * 2\na[0].append(99)\na.append(88)\nprint(a)",
+    "options": [
+      "[[99], [99], 88]",
+      "[[99], [], 88]",
+      "[[99, 88], [99, 88]]",
+      "[[99], [99]]"
+    ],
+    "answer": "[[99], [99], 88]"
+  },
+  {
+    "id": 6,
+    "question": "What is the result of the following slice assignment on a list?\n\nx = [1, 2, 3, 4, 5]\nx[1:4:2] = [9, 9]\nprint(x)",
+    "options": [
+      "[1, 9, 3, 9, 5]",
+      "[1, 9, 9, 5]",
+      "ValueError: attempt to assign sequence of size 2 to extended slice of size 3",
+      "ValueError: must assign iterable to extended slice of size 2"
+    ],
+    "answer": "[1, 9, 3, 9, 5]"
+  },
+  {
+    "id": 7,
+    "question": "What is the exact value returned by the following expression?\n\nprint(1000 is not 1000, 1000 != 1000)",
+    "options": [
+      "False False",
+      "True False",
+      "True True",
+      "False True"
+    ],
+    "answer": "True False"
+  },
+  {
+    "id": 8,
+    "question": "What does the following statement produce?\n\nprint(type(type), type(type(int)))",
+    "options": [
+      "<class 'type'> <class 'type'>",
+      "<class 'type'> <class 'object'>",
+      "<class 'object'> <class 'type'>",
+      "<class 'type'> <class 'str'>"
+    ],
+    "answer": "<class 'type'> <class 'type'>"
+  },
+  {
+    "id": 9,
+    "question": "What is the output of the following identity and arithmetic evaluation?\n\nx = -5\ny = -5\nprint(x is y, -7 // 3)",
+    "options": [
+      "True -2",
+      "True -3",
+      "False -3",
+      "False -2"
+    ],
+    "answer": "True -3"
+  },
+  {
+    "id": 10,
+    "question": "What is the behavior of the following float operations?\n\nimport math\nx = float('nan')\nprint(x == x, math.isnan(x), x is x)",
+    "options": [
+      "False True True",
+      "True True True",
+      "False True False",
+      "False False True"
+    ],
+    "answer": "False True True"
+  },
+  {
+    "id": 11,
+    "question": "What is the output of the following boolean evaluation?\n\nprint([] or False and True or \"Python\")",
+    "options": [
+      "[]",
+      "False",
+      "True",
+      "Python"
+    ],
+    "answer": "Python"
+  },
+  {
+    "id": 12,
+    "question": "What is the output of the following string slice with large boundary constraints?\n\ns = \"abcdef\"\nprint(s[100:-100:-2])",
+    "options": [
+      "'' (an empty string)",
+      "fdb",
+      "eca",
+      "IndexError"
+    ],
+    "answer": "fdb"
+  },
+  {
+    "id": 13,
+    "question": "What is the outcome of using the walrus operator inside a condition with a short-circuit operator?\n\nx = 0\nif (x := 5) > 3 or (y := 10) > 5:\n    print(x, y)",
+    "options": [
+      "5 10",
+      "5 NameError: name 'y' is not defined",
+      "0 NameError: name 'y' is not defined",
+      "SyntaxError"
+    ],
+    "answer": "5 NameError: name 'y' is not defined"
+  },
+  {
+    "id": 14,
+    "question": "What does the following expression evaluate to?\n\nprint(bool(all([[], False, 0])))",
+    "options": [
+      "True",
+      "False",
+      "TypeError",
+      "ValueError"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": 15,
+    "question": "What is the evaluated output of this arithmetic priority expression?\n\nprint(~-5, -2 ** 2 ** 3)",
+    "options": [
+      "4 -64",
+      "4 -256",
+      "4 -512",
+      "-6 -256"
+    ],
+    "answer": "4 -256"
+  },
+  {
+    "id": 16,
+    "question": "What happens when you use string stripping with overlapping characters?\n\nprint(\"banana\".strip(\"an\"))",
+    "options": [
+      "b",
+      "ba",
+      "banana",
+      "'' (empty string)"
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 17,
+    "question": "What is the output of the following initialization statement?\n\na, *b, c = (1,)\nprint(b)",
+    "options": [
+      "None",
+      "[]",
+      "ValueError: not enough values to unpack",
+      "SyntaxError"
+    ],
+    "answer": "ValueError: not enough values to unpack"
+  },
+  {
     "id": 18,
-    "question": "What is output?\n\na = 5\nb = 2\nprint(a / b)\nprint(a // b)",
-    "options": ["2.5 and 2", "2.5 and 2.5", "2 and 2", "Error"],
-    "answer": "2.5 and 2"
+    "question": "What is the result of the following assignment pattern?\n\n*x, = [1, 2, 3]\nprint(type(x))",
+    "options": [
+      "<class 'list'>",
+      "<class 'tuple'>",
+      "SyntaxError",
+      "TypeError"
+    ],
+    "answer": "<class 'list'>"
   },
   {
     "id": 19,
-    "question": "What is output?\n\nprint(10 / 2)",
-    "options": ["5", "5.0", "2.0", "Error"],
-    "answer": "5.0"
+    "question": "What is the type and evaluation value of the expression `bool('False')`?",
+    "options": [
+      "False",
+      "True",
+      "TypeError",
+      "ValueError"
+    ],
+    "answer": "True"
   },
   {
     "id": 20,
-    "question": "Which is a string?",
-    "options": ["100", "True", "\"Hello\"", "3.14"],
-    "answer": "\"Hello\""
+    "question": "What is the exact string manipulation result of this function chain?\n\nprint(\"aBc\".swapcase().lower().islower())",
+    "options": [
+      "True",
+      "False",
+      "AttributeError",
+      "None"
+    ],
+    "answer": "True"
   },
   {
     "id": 21,
-    "question": "What is output?\n\nx = \"Python\"\nprint(type(x))",
-    "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'bool'>"],
-    "answer": "<class 'str'>"
+    "question": "What is the value of the following base calculation code?\n\nprint(int('11', 2) + int('11', 8))",
+    "options": [
+      "12",
+      "22",
+      "14",
+      "ValueError"
+    ],
+    "answer": "14"
   },
   {
     "id": 22,
-    "question": "What is output?\n\nprint(2 ** 3)",
-    "options": ["6", "8", "9", "Error"],
-    "answer": "8"
+    "question": "What is the evaluation result of the modulo operation on floats shown below?\n\nprint(-5.5 % 2.5)",
+    "options": [
+      "-0.5",
+      "2.0",
+      "-2.0",
+      "0.5"
+    ],
+    "answer": "2.0"
   },
   {
     "id": 23,
-    "question": "Which type is True?",
-    "options": ["int", "float", "str", "bool"],
-    "answer": "bool"
+    "question": "What occurs when this condition block is parsed and evaluated?\n\nx = []\nif x:\n    print(\"A\")\nelif x is not None:\n    print(\"B\")\nelse:\n    print(\"C\")",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "No output"
+    ],
+    "answer": "B"
   },
   {
     "id": 24,
-    "question": "What is output?\n\na = input(\"Enter: \")\nprint(type(a))\n\n(User enters 100)",
-    "options": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'bool'>"],
-    "answer": "<class 'str'>"
+    "question": "What will be printed when running this print statement option?\n\nprint(\"hello\", \"world\", sep=\"\", end=\"\\r\")\nprint(\"hi\")",
+    "options": [
+      "helloworld\\nhi",
+      "hi rloworld",
+      "hielloworld",
+      "hi"
+    ],
+    "answer": "hielloworld"
   },
   {
     "id": 25,
-    "question": "Which function takes input from user?",
-    "options": ["input()", "get()", "scan()", "read()"],
-    "answer": "input()"
+    "question": "What is the value of the ternary operation assignment below?\n\nx = (5 if 3 > 2 else 10) if 1 else 20\nprint(x)",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "SyntaxError"
+    ],
+    "answer": "5"
   },
   {
     "id": 26,
-    "question": "What is output of:\n\nprint(5 + 3)",
-    "options": ["53", "8", "5+3", "Error"],
-    "answer": "8"
+    "question": "What is the output of the following division logic behavior?\n\nprint(type(10 // 3.0) == type(10 // 3))",
+    "options": [
+      "True",
+      "False",
+      "TypeError",
+      "SyntaxError"
+    ],
+    "answer": "False"
   },
   {
     "id": 27,
-    "question": "What is output?\n\nprint(\"A\", \"B\")",
-    "options": ["AB", "A B", "A, B", "Error"],
-    "answer": "A B"
+    "question": "What does the following explicit operation return inside standard CPython?\n\nx = \"A\" * 20\ny = \"A\" * 20\nprint(x is y)",
+    "options": [
+      "True",
+      "False",
+      "TypeError",
+      "None"
+    ],
+    "answer": "True"
   },
   {
     "id": 28,
-    "question": "Which is decimal type?",
-    "options": ["int", "float", "str", "bool"],
-    "answer": "float"
+    "question": "What does the string compilation evaluate to when using consecutive unseparated strings?\n\ns = \"Py\" \"th\" \"on\"\nprint(len(s))",
+    "options": [
+      "2",
+      "6",
+      "TypeError",
+      "SyntaxError"
+    ],
+    "answer": "6"
   },
   {
     "id": 29,
-    "question": "What is output?\n\na = 5\na += 2\nprint(a)",
-    "options": ["5", "2", "7", "Error"],
-    "answer": "7"
+    "question": "What is the output of the following comparison?\n\nprint(9 == 9.0, isinstance(9, float))",
+    "options": [
+      "True True",
+      "True False",
+      "False True",
+      "False False"
+    ],
+    "answer": "True False"
   },
   {
     "id": 30,
-    "question": "What is output?\n\nx = 10\ny = 20\nprint(x < y)",
-    "options": ["True", "False", "None", "Error"],
-    "answer": "True"
+    "question": "What is returned when calling `.find()` on an empty string lookup path?\n\nprint(\"abc\".find(\"\", 1, 2))",
+    "options": [
+      "-1",
+      "1",
+      "0",
+      "ValueError"
+    ],
+    "answer": "1"
   }
 ]
