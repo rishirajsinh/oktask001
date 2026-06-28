@@ -1,332 +1,332 @@
 [
   {
     "id": 1,
-    "question": "In C++, what is the exact outcome of evaluating the expression `x = 5; int y = ++x + x++ + ++x;` under the C++17 standard compliance rules?",
+    "question": "Let A and B be two $3 \\times 3$ invertible matrices such that $A + B = I$ and $A^{-1} + B^{-1} = 2I$. Find the value of $\\det(4AB)$.",
     "options": [
-      "19",
-      "20",
-      "21",
-      "The behavior is unsequenced and technically undefined/implementation-dependent"
+      "1",
+      "2",
+      "4",
+      "8"
     ],
-    "answer": "The behavior is unsequenced and technically undefined/implementation-dependent"
+    "answer": "2"
   },
   {
     "id": 2,
-    "question": "In Python, which of the following expressions evaluates to a distinct boolean value compared to the other three?",
+    "question": "Let P be a $3 \\times 3$ matrix such that $P^T = 2P + I$, where $P^T$ is the transpose of P and I is the identity matrix. Then, which of the following is true?",
     "options": [
-      "bool([[]][0])",
-      "all([[], {}])",
-      "any([[], 0, ''])",
-      "bool(all([]))"
+      "$P = -I$",
+      "$P = I$",
+      "$P = 2I$",
+      "No such matrix P exists"
     ],
-    "answer": "bool(all([]))"
+    "answer": "$P = -I$"
   },
   {
     "id": 3,
-    "question": "Consider a 32-bit two's complement signed integer systems. If `a = 0x7FFFFFFF` and `b = 0x80000000`, what is the exact bitwise evaluation of `(a + 1) ^ b`?",
+    "question": "If $A = \\begin{pmatrix} 1 & 0 & 0 \\\\ 1 & 1 & 0 \\\\ 1 & 1 & 1 \\end{pmatrix}$, then the sum of all elements of $A^{50}$ is:",
     "options": [
-      "0x00000000",
-      "0xFFFFFFFF",
-      "0x7FFFFFFF",
-      "0x80000000"
+      "1225",
+      "1326",
+      "1275",
+      "1376"
     ],
-    "answer": "0x00000000"
+    "answer": "1326"
   },
   {
     "id": 4,
-    "question": "In JavaScript, what is the exact string output of the expression `[] + {} + [[]] + ![]`?",
+    "question": "Let $M$ be a $3 \\times 3$ non-zero skew-symmetric matrix. If $\\det(I + M^2) = k$, then which of the following is always true about $k$?",
     "options": [
-      "\"[object Object]false\"",
-      "\"undefined[object Object]false\"",
-      "\"[object Object][object Object]\"",
-      "\"NaNfalse\""
+      "$k \\le 0$",
+      "$k = 1$",
+      "$k \\ge 1$",
+      "$0 < k < 1$"
     ],
-    "answer": "\"[object Object]false\""
+    "answer": "$k \\ge 1$"
   },
   {
     "id": 5,
-    "question": "In Python, what is the value of `x` after executing: `x = \"Python\"; x = x.join([x[0], x[-1]])`?",
+    "question": "Let $A$ be a $3 \\times 3$ matrix with real entries such that $\\det(A) = 2$. If $\\det(\\text{adj}(\\text{adj}(2A))) = 2^k$, find the value of $k$.",
     "options": [
-      "\"PPythonn\"",
-      "\"nPythonP\"",
-      "\"Python\"",
-      "\"P\""
+      "14",
+      "16",
+      "18",
+      "20"
     ],
-    "answer": "\"PPythonn\""
+    "answer": "16"
   },
   {
     "id": 6,
-    "question": "What is the behavior of the following C code snippet?\n`int x = 1;` \n`if (x-- && --x) { printf(\"A\"); }` \n`else if (++x || x++) { printf(\"B\"); }` \n`printf(\"%d\", x);`",
+    "question": "If the system of equations $x + ay + a^2z = 1$, $x + by + b^2z = 1$, $x + cy + c^2z = 1$ has a unique solution, where $a, b, c$ are distinct, then the value of $z$ is:",
     "options": [
-      "A-1",
-      "B0",
-      "B1",
-      "B-1"
+      "1",
+      "0",
+      "$a+b+c$",
+      "$abc$"
     ],
-    "answer": "B0"
+    "answer": "0"
   },
   {
     "id": 7,
-    "question": "In Java, what is the result of evaluating the expression `true ? 1.0 : (true ? 2 : 3)` when wrapped inside an dynamic object assignment?",
-    "options": [
-      "It returns an Integer object with value 1",
-      "It returns a Double object with value 1.0 due to ternary numeric promotion rules",
-      "It causes a compilation error due to type mismatch",
-      "It returns a Double object with value 2.0"
-    ],
-    "answer": "It returns a Double object with value 1.0 due to ternary numeric promotion rules"
-  },
-  {
-    "id": 8,
-    "question": "In C, if `int a = 2, b = 1, c = 0;`, what is the final value of `c` after executing `c = a --> b == c;`?",
+    "question": "Let $D = \\begin{vmatrix} 1 & 1 & 1 \\\\ \\binom{n}{1} & \\binom{n+1}{1} & \\binom{n+2}{1} \\\\ \\binom{n}{2} & \\binom{n+1}{2} & \\binom{n+2}{2} \\end{vmatrix}$. The value of $D$ is:",
     "options": [
       "0",
       "1",
-      "2",
-      "-1"
+      "$n$",
+      "$n^2$"
+    ],
+    "answer": "1"
+  },
+  {
+    "id": 8,
+    "question": "Let $A$ be a $3 \\times 3$ matrix such that $A^2 = A$. If $B = I - A$, then $\\det(B) \\cdot \\det(A)$ is equal to:",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "Either 0 or 1"
     ],
     "answer": "0"
   },
   {
     "id": 9,
-    "question": "In Python, what is the value of `bool(-0.0 or 0j or \"\" or [0])`?",
+    "question": "For a $3 \\times 3$ matrix $M$, let $C_{ij}$ denote the cofactor of the element $m_{ij}$. If $\\det(M) = 5$, what is the value of the determinant of the matrix formed by the cofactors of the cofactors, i.e., $\\det([\\text{cofactor}(C_{ij})])$?",
     "options": [
-      "True",
-      "False",
-      "0",
-      "TypeError"
+      "25",
+      "125",
+      "625",
+      "3125"
     ],
-    "answer": "True"
+    "answer": "625"
   },
   {
     "id": 10,
-    "question": "In JavaScript, what does `typeof (parseInt && parseFloat)(\"123\")` evaluate to?",
+    "question": "Four fair dice are rolled simultaneously. What is the probability that the product of the four numbers shown is a multiple of 20?",
     "options": [
-      "\"number\"",
-      "\"function\"",
-      "\"string\"",
-      "\"undefined\""
+      "317/648",
+      "329/648",
+      "361/648",
+      "401/648"
     ],
-    "answer": "\"number\""
+    "answer": "329/648"
   },
   {
     "id": 11,
-    "question": "What is the value of `x` in Python after evaluating: `x = \"abcde\"[::-1][1:4:-1]`?",
+    "question": "Three bags $B_1, B_2, B_3$ contain red and white balls. $B_1$ has 2 red, 3 white; $B_2$ has 3 red, 4 white; $B_3$ has 4 red, 5 white. A bag is chosen at random and a ball drawn from it is found to be red. What is the probability it came from $B_2$?",
     "options": [
-      "\"bcd\"",
-      "\"dcb\"",
-      "\"\"",
-      "\"cb\""
+      "350/1031",
+      "360/1031",
+      "370/1031",
+      "380/1031"
     ],
-    "answer": "\"\""
+    "answer": "360/1031"
   },
   {
     "id": 12,
-    "question": "In C++, what does the expression `sizeof(char) == sizeof('a')` evaluate to on typical architectures?",
+    "question": "An unbiased coin is tossed repeatedly until a head appears for the first time or until it has been tossed 5 times. If $X$ denotes the number of tosses, find the mean of $X$.",
     "options": [
-      "Always true",
-      "Always false because character literals in C++ are of type `int`",
-      "Always true because character literals in C++ are of type `char`",
-      "Implementation-defined based on the signedness of the compiler"
+      "31/16",
+      "15/8",
+      "33/16",
+      "2"
     ],
-    "answer": "Always true because character literals in C++ are of type `char`"
+    "answer": "31/16"
   },
   {
     "id": 13,
-    "question": "In C, what is the final state of `x` after: `unsigned int x = 0; x = ~x >> 31;`?",
+    "question": "The variance of 20 observations is 5. If each observation is multiplied by 3 and then 2 is subtracted from each, the new variance of the observations is:",
     "options": [
-      "0",
-      "1",
-      "2147483647",
-      "4294967295"
+      "13",
+      "15",
+      "43",
+      "45"
     ],
-    "answer": "1"
+    "answer": "45"
   },
   {
     "id": 14,
-    "question": "In Python, what is the output of `print(\"a\" < \"ab\" < \"abc\" == True)`?",
+    "question": "A data set contains $n$ items. If the mean is $\\bar{x}$ and the standard deviation is $\\sigma$, a new data set is formed by changing one item $x_1$ to $x_1'$. If the mean remains unchanged, the new standard deviation $\\sigma'$ satisfies:",
     "options": [
-      "True",
-      "False",
-      "TypeError",
-      "None"
+      "$\\sigma'^2 = \\sigma^2 + \\frac{(x_1' - x_1)(x_1' + x_1 - 2\\bar{x})}{n}$",
+      "$\\sigma'^2 = \\sigma^2 + \\frac{(x_1' - x_1)^2}{n}$",
+      "$\\sigma'^2 = \\sigma^2$",
+      "$\\sigma'^2 = \\sigma^2 + \\frac{2(x_1' - x_1)\\bar{x}}{n}$"
     ],
-    "answer": "False"
+    "answer": "$\\sigma'^2 = \\sigma^2 + \\frac{(x_1' - x_1)(x_1' + x_1 - 2\\bar{x})}{n}$"
   },
   {
     "id": 15,
-    "question": "In JavaScript, what is the value of `(!![] + !![] + !![])` evaluated as an array index lookup like `[10, 20, 30, 40][!![] + !![] + !![]]`?",
+    "question": "In a competitive exam, the scores of 5 students are $x, x+2, x+4, x+6, x+8$. If the mean deviation about the median is 2.4, what is the value of the variance?",
     "options": [
+      "4",
+      "8",
       "10",
-      "20",
-      "30",
-      "40"
+      "12"
     ],
-    "answer": "40"
+    "answer": "8"
   },
   {
     "id": 16,
-    "question": "What is the exact result of the evaluation of the expression `1 << 32` in standard C on a platform where `int` is 32 bits wide?",
+    "question": "Let $\\vec{a}, \\vec{b}, \\vec{c}$ be three non-coplanar unit vectors such that the angle between any two of them is $\\frac{\\pi}{3}$. If $\\vec{a} \\times \\vec{b} + \\vec{b} \\times \\vec{c} = p\\vec{a} + q\\vec{b} + r\\vec{c}$, find the value of $p^2 + q^2 + r^2$.",
     "options": [
-      "0",
+      "1/2",
       "1",
-      "4294967296",
-      "Undefined Behavior"
+      "3/2",
+      "2"
     ],
-    "answer": "Undefined Behavior"
+    "answer": "1"
   },
   {
     "id": 17,
-    "question": "In Python, given `s = \"engineering\"`, what is the output of `s.count(\"e\", 1, 5)`?",
+    "question": "Let $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} - \\hat{j} + 2\\hat{k}$ and $\\vec{c} = x\\hat{i} + (x-2)\\hat{j} - \\hat{k}$. If the vector $\\vec{c}$ lies in the plane of $\\vec{a}$ and $\\vec{b}$, then $x$ equals:",
     "options": [
-      "1",
-      "2",
       "0",
-      "3"
+      "1",
+      "-2",
+      "2"
     ],
-    "answer": "1"
+    "answer": "-2"
   },
   {
     "id": 18,
-    "question": "In Python, which conditional statement will execute its block given `x = [[]]`?",
+    "question": "A line makes angles $\\alpha, \\beta, \\gamma, \\delta$ with the four diagonals of a cube. The value of $\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma + \\cos^2\\delta$ is equal to:",
     "options": [
-      "if not x:",
-      "if x == False:",
-      "if x:",
-      "if len(x) == 0:"
+      "4/3",
+      "1",
+      "2/3",
+      "2"
     ],
-    "answer": "if x:"
+    "answer": "4/3"
   },
   {
     "id": 19,
-    "question": "In C, what does the expression `5 == 5` evaluate to if there's a macro `#define x(y) #y` applied dynamically?",
+    "question": "The shortest distance between the lines $\\frac{x-1}{2} = \\frac{y-2}{3} = \\frac{z-3}{4}$ and $\\frac{x-2}{3} = \\frac{y-4}{4} = \\frac{z-5}{5}$ is:",
     "options": [
-      "0",
-      "1",
-      "Compilation Error",
-      "None of the above"
+      "$1/\\sqrt{6}$",
+      "$1/\\sqrt{3}$",
+      "$1/\\sqrt{2}$",
+      "0"
     ],
-    "answer": "1"
+    "answer": "$1/\\sqrt{6}$"
   },
   {
     "id": 20,
-    "question": "In Python, what is the identity relationship status of `a = 256` and `b = 256` compared to `c = 257` and `d = 257` in a standard interactive shell?",
+    "question": "A variable plane passes through a fixed point $(a,b,c)$ and meets the coordinate axes at $A, B, C$. The locus of the point of intersection of planes drawn through $A, B, C$ parallel to the coordinate planes is:",
     "options": [
-      "`a is b` is True, `c is d` is False",
-      "`a is b` is True, `c is d` is True",
-      "`a is b` is False, `c is d` is False",
-      "`a is b` is False, `c is d` is True"
+      "$ax + by + cz = 1$",
+      "$\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 1$",
+      "$x^2/a^2 + y^2/b^2 + z^2/c^2 = 1$",
+      "$a^2x + b^2y + c^2z = 1$"
     ],
-    "answer": "`a is b` is True, `c is d` is False"
+    "answer": "$\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 1$"
   },
   {
     "id": 21,
-    "question": "In JavaScript, what is the output of `1 < 2 < 3` and `3 > 2 > 1` respectively?",
+    "question": "Find the value of $\\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ$.",
     "options": [
-      "true, true",
-      "true, false",
-      "false, true",
-      "false, false"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
-    "answer": "true, false"
+    "answer": "4"
   },
   {
     "id": 22,
-    "question": "In C++, what is the size of an empty string object (`std::string s = \"\";`) on a standard 64-bit GCC implementation due to internal pointer structures?",
+    "question": "The number of solutions of the equation $\\sin 5x \\cos 3x = \\sin 6x \\cos 2x$ in the interval $[0, \\pi]$ is:",
     "options": [
-      "0 bytes",
-      "1 byte",
-      "8 bytes",
-      "32 bytes (or implementation specific non-zero structure size)"
+      "3",
+      "4",
+      "5",
+      "6"
     ],
-    "answer": "32 bytes (or implementation specific non-zero structure size)"
+    "answer": "6"
   },
   {
     "id": 23,
-    "question": "In Python, what is the runtime result of running: `not \"\" or \"Default\" and 0 or 5`?",
+    "question": "A vertical pole stands at the center of a horizontal equilateral triangle. If the upper end of the pole subtends an angle of $60^\\circ$ at each of the vertices of the triangle, and the length of each side of the triangle is $a$, then the height of the pole is:",
     "options": [
-      "True",
-      "\"Default\"",
-      "0",
-      "5"
+      "$a/\\sqrt{3}$",
+      "$a$",
+      "$a\\sqrt{3}$",
+      "$2a/\\sqrt{3}$"
     ],
-    "answer": "5"
+    "answer": "$a$"
   },
   {
     "id": 24,
-    "question": "What is the value of `res` after this evaluation in JavaScript? `let res = 0.1 + 0.2 === 0.3;`",
+    "question": "If $\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 0$ and $\\sin \\alpha + \\sin \\beta + \\sin \\gamma = 0$, then the value of $\\cos 3\\alpha + \\cos 3\\beta + \\cos 3\\gamma$ is:",
     "options": [
-      "true",
-      "false",
-      "undefined",
-      "TypeError"
+      "0",
+      "$3\\cos(\\alpha + \\beta + \\gamma)$",
+      "$3\\sin(\\alpha + \\beta + \\gamma)$",
+      "1"
     ],
-    "answer": "false"
+    "answer": "$3\\cos(\\alpha + \\beta + \\gamma)$"
   },
   {
     "id": 25,
-    "question": "In C++, what does `int x = -1; unsigned int y = 1;` evaluate to for the expression `x < y`?",
+    "question": "If $A, B, C$ are the angles of a triangle, the maximum value of $\\sin A \\sin B \\sin C$ is:",
     "options": [
-      "true",
-      "false",
-      "Implementation-defined",
-      "Compilation Error"
+      "$1/8$",
+      "$3\\sqrt{3}/8$",
+      "3/4",
+      "1"
     ],
-    "answer": "false"
+    "answer": "$3\\sqrt{3}/8$"
   },
   {
     "id": 26,
-    "question": "What is the final value of `x` in Python after executing: `x = 10; x ^= 4; x ^= 4;`?",
+    "question": "Let $P$ be a matrix of order $3 \\times 3$ such that all elements of $P$ are chosen from the set $\\{-1, 0, 1\\}$. The maximum possible value of $\\det(P)$ is:",
     "options": [
-      "14",
-      "10",
+      "2",
       "4",
-      "0"
+      "6",
+      "8"
     ],
-    "answer": "10"
+    "answer": "4"
   },
   {
     "id": 27,
-    "question": "In a regular expression syntax scenario, what string matches the pattern `r\"^$\\n\"` directly across standard multiline modes?",
+    "question": "A man throws a fair die repeatedly until he gets a 6. Given that he got a 6 on an even-numbered throw, what is the probability that he got it specifically on the 2nd throw?",
     "options": [
-      "An completely empty string",
-      "A string containing exactly one newline character",
-      "A string containing two newlines",
-      "No possible string can match this"
+      "5/6",
+      "6/11",
+      "5/11",
+      "25/36"
     ],
-    "answer": "A string containing exactly one newline character"
+    "answer": "6/11"
   },
   {
     "id": 28,
-    "question": "In JavaScript, what does `Array(3).join(\"a\")` produce?",
+    "question": "Let $\\vec{u}, \\vec{v}, \\vec{w}$ be vectors such that $\\vec{u} + \\vec{v} + \\vec{w} = \\vec{0}$. If $|\\vec{u}| = 3, |\\vec{v}| = 4, |\\vec{w}| = 5$, find the value of $\\vec{u}\\cdot\\vec{v} + \\vec{v}\\cdot\\vec{w} + \\vec{w}\\cdot\\vec{u}$.",
     "options": [
-      "\"aaa\"",
-      "\"aa\"",
-      "\"a,a,a\"",
-      "\"\""
+      "-25",
+      "-50",
+      "0",
+      "25"
     ],
-    "answer": "\"aa\""
+    "answer": "-25"
   },
   {
     "id": 29,
-    "question": "What happens when you compile and execute this line in C: `int x = sizeof(printf(\"Hello World\"));`?",
+    "question": "The angle of elevation of the top of a tower from a point $A$ due South of it is $\\alpha$ and from a point $B$ due East of it is $\\beta$. If $AB = d$, then the height of the tower is:",
     "options": [
-      "\"Hello World\" is printed to the console, `x` gets value 11",
-      "Nothing is printed, `x` gets the size of an integer type",
-      "Nothing is printed, `x` gets value 0",
-      "Compilation error because `printf` returns void"
+      "$\\frac{d}{\\sqrt{\\cot^2\\alpha + \\cot^2\\beta}}$",
+      "$\\frac{d}{\\sqrt{\\tan^2\\alpha + \\tan^2\\beta}}$",
+      "$d \\sqrt{\\tan^2\\alpha + \\tan^2\\beta}$",
+      "$d \\sqrt{\\cot^2\\alpha + \\cot^2\\beta}$"
     ],
-    "answer": "Nothing is printed, `x` gets the size of an integer type"
+    "answer": "$\\frac{d}{\\sqrt{\\cot^2\\alpha + \\cot^2\\beta}}$"
   },
   {
     "id": 30,
-    "question": "In Python, what is the output of the expression `\"abc\" * False`?",
+    "question": "Let $\\Delta(x) = \\begin{vmatrix} \\sin x & \\cos x & \\sin 2x \\\\ \\sin 2x & \\sin x & \\cos x \\\\ \\cos x & \\sin 2x & \\sin x \\end{vmatrix}$. Find the value of $\\int_0^{\\pi/2} \\Delta(x) \\, dx$.",
     "options": [
-      "\"\"",
-      "\"abc\"",
-      "TypeError",
-      "0"
+      "0",
+      "1",
+      "-1",
+      "\\pi"
     ],
-    "answer": "\"\""
+    "answer": "0"
   }
 ]

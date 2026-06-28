@@ -18,6 +18,19 @@ const TestPage = () => {
   const [timeLeft, setTimeLeft] = useState(null); // Will be set from backend
   const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://oktask001.onrender.com';
 
+  // MathJax Typesetting Hook
+  useEffect(() => {
+    if (testStarted && testData) {
+      const timer = setTimeout(() => {
+        if (window.MathJax && window.MathJax.typesetPromise) {
+          window.MathJax.typesetPromise()
+            .catch(err => console.error('MathJax typesetting error:', err));
+        }
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [testStarted, testData, selectedAnswers]);
+
   // Timer Logic
   useEffect(() => {
     if (!testStarted || submitted || timeLeft === null || timeLeft <= 0) return;
@@ -241,7 +254,7 @@ const TestPage = () => {
             <div className={`timer-badge ${timeLeft < 300 ? 'low-time' : ''}`}>
               ⏱️ {formatTime(timeLeft)}
             </div>
-            <div className="badge student-badge">{studentEmail}</div>
+            <div className="badge student-badge" title={studentEmail}>{studentEmail}</div>
           </div>
         </div>
 
